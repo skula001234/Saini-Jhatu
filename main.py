@@ -495,56 +495,42 @@ async def start(bot, m: Message):
 
     await asyncio.sleep(1)
     await start_message.edit_text(
-        f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n" +
-        f"Initializing Uploader bot... 🤖\n\n"
-        f"Progress: [⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️] 0%\n\n"
+        "╭──────────────╮\n│ ⬢ □ □ □ □ │\n╰──────────────╯",
     )
 
     await asyncio.sleep(1)
     await start_message.edit_text(
-        f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n" +
-        f"Loading features... ⏳\n\n"
-        f"Progress: [🟥🟥🟥⬜️⬜️⬜️⬜️⬜️⬜️⬜️] 25%\n\n"
+        "╭──────────────╮\n│ ⬢ ⬢ □ □ □ │\n╰──────────────╯",
     )
     
     await asyncio.sleep(1)
     await start_message.edit_text(
-        f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n" +
-        f"This may take a moment, sit back and relax! 😊\n\n"
-        f"Progress: [🟧🟧🟧🟧🟧⬜️⬜️⬜️⬜️⬜️] 50%\n\n"
+        "╭──────────────╮\n│ ⬢ ⬢ □ □ □ │\n╰──────────────╯",
     )
 
     await asyncio.sleep(1)
     await start_message.edit_text(
-        f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n" +
-        f"Checking subscription status... 🔍\n\n"
-        f"Progress: [🟨🟨🟨🟨🟨🟨🟨🟨⬜️⬜️] 75%\n\n"
+        "╭──────────────╮\n│ ⬢ ⬢ ⬢ ⬢ □ │\n╰──────────────╯",
     )
 
     await asyncio.sleep(1)
     if m.chat.id in AUTH_USERS:
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("💎 Features", callback_data="feat_command"), InlineKeyboardButton("🕸️ Commands", callback_data="cmd_command")],
-            [InlineKeyboardButton("💳 Plans", callback_data="upgrade_command")],
-            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="🛠️ Repo", url="https://github.com/nikhilsainiop/saini-txt-direct")],
+            [InlineKeyboardButton("⌯ FʀᴏɴᴛMᴀɴ | ×͜× |", url="https://t.me/MrFrontMan001")],
+            [InlineKeyboardButton("🪔 ғᴇᴀᴛᴜʀᴇꜱ", callback_data="help"), InlineKeyboardButton("ᴅᴇᴛᴀɪʟꜱ 🐺", url="https://t.me/MrFrontMan001")],
         ])
         
         await start_message.edit_text(
-            f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n" +
-            f"Great! You are a premium member!\n"
-            f"Use button : **✨ Commands** to get started 🌟\n\n"
-            f"If you face any problem contact -  [{CREDIT}⁬](tg://openmessage?user_id={OWNER})\n", disable_web_page_preview=True, reply_markup=keyboard
+            f"Mʏ Nᴀᴍᴇ [DRM Wɪᴢᴀʀᴅ 🦋](https://t.me/DRM_Wizardbot)\n\nYᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ\nCᴏɴᴛᴀᴄᴛ [⌯ FʀᴏɴᴛMᴀɴ | ×͜× |](https://t.me/Mrfrontman001) ғᴏʀ ᴀᴄᴄᴇꜱꜱ**", disable_web_page_preview=True, reply_markup=keyboard
         )
     else:
         await asyncio.sleep(2)
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("💎 Features", callback_data="feat_command"), InlineKeyboardButton("✨ Commands", callback_data="cmd_command")],
-            [InlineKeyboardButton("💳 Plans", callback_data="upgrade_command")],
-            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="🛠️ Repo", url="https://github.com/nikhilsainiop/saini-txt-direct")],
+            [InlineKeyboardButton("⌯ FʀᴏɴᴛMᴀɴ | ×͜× |", url="https://t.me/MrFrontMan001")],
+            [InlineKeyboardButton("🪔 ғᴇᴀᴛᴜʀᴇꜱ", callback_data="help"), InlineKeyboardButton("ᴅᴇᴛᴀɪʟꜱ 🐺", url="https://t.me/MrFrontMan001")],
         ])
         await start_message.edit_text(
-           f" 🎉 Welcome {m.from_user.first_name} to DRM Bot! 🎉\n\n"
-           f"**You are currently using the free version.** 🆓\n\n<blockquote expandable>I'm here to make your life easier by downloading videos from your **.txt** file 📄 and uploading them directly to Telegram!</blockquote>\n\n**Want to get started? Press /id**\n\n💬 Contact : [{CREDIT}⁬](tg://openmessage?user_id={OWNER}) to Get The Subscription 🎫 and unlock the full potential of your new bot! 🔓\n", disable_web_page_preview=True, reply_markup=keyboard
+           f"Mʏ Nᴀᴍᴇ [DRM Wɪᴢᴀʀᴅ 🦋](https://t.me/DRM_Wizardbot)\n\nYᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ\nCᴏɴᴛᴀᴄᴛ [⌯ FʀᴏɴᴛMᴀɴ | ×͜× |](https://t.me/Mrfrontman001) ғᴏʀ ᴀᴄᴄᴇꜱꜱ**", disable_web_page_preview=True, reply_markup=keyboard
     )
 
 @bot.on_callback_query(filters.regex("back_to_main_menu"))
@@ -553,14 +539,13 @@ async def back_to_main_menu(client, callback_query):
     first_name = callback_query.from_user.first_name
     caption = f"✨ **Welcome [{first_name}](tg://user?id={user_id}) in My uploader bot**"
     keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("💎 Features", callback_data="feat_command"), InlineKeyboardButton("✨ Commands", callback_data="cmd_command")],
-            [InlineKeyboardButton("💳 Plans", callback_data="upgrade_command")],
-            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="🛠️ Repo", url="https://github.com/nikhilsainiop/saini-txt-direct")],
+            [InlineKeyboardButton("⌯ FʀᴏɴᴛMᴀɴ | ×͜× |", url="https://t.me/MrFrontMan001")],
+            [InlineKeyboardButton("🪔 ғᴇᴀᴛᴜʀᴇꜱ", callback_data="help"), InlineKeyboardButton("ᴅᴇᴛᴀɪʟꜱ 🐺", url="https://t.me/MrFrontMan001")],
         ])
     
     await callback_query.message.edit_media(
       InputMediaPhoto(
-        media="https://envs.sh/GVI.jpg",
+        media="https://files.catbox.moe/oti8ry.jpg",
         caption=caption
       ),
       reply_markup=keyboard
@@ -1089,14 +1074,14 @@ async def txt_handler(bot: Client, m: Message):
 
             elif "https://cpvod.testbook.com/" in url or "classplusapp.com/drm/" in url:
                 url = url.replace("https://cpvod.testbook.com/","https://media-cdn.classplusapp.com/drm/")
-                url = f"https://cpapi-ytas.onrender.com/extract_keys?url={url}@bots_updatee&user_id={user_id}"
+                url = f"https://cpapi-ytas.onrender.com/extract_keys?url={url}@bots_updatee&user_id=7793257011"
                 #url = f"https://scammer-keys.vercel.app/api?url={url}&token={cptoken}&auth=@scammer_botxz1"
                 mpd, keys = helper.get_mps_and_keys(url)
                 url = mpd
                 keys_string = " ".join([f"--key {key}" for key in keys])
 
             elif "classplusapp" in url:
-                signed_api = f"https://cpapi-ytas.onrender.com/extract_keys?url={url}@bots_updatee&user_id={user_id}"
+                signed_api = f"https://cpapi-ytas.onrender.com/extract_keys?url={url}@bots_updatee&user_id=7793257011"
                 response = requests.get(signed_api, timeout=20)
                 url = response.text.strip()
                 url = response.json()['url']  
