@@ -495,7 +495,7 @@ async def start(bot, m: Message):
 
     await asyncio.sleep(1)
     await start_message.edit_text(
-        "╭──────────────╮\n│ ⬢ □ □ □ │\n╰──────────────╯",
+        "╭──────────────╮\n│ ⬢ □ □ □ □ │\n╰──────────────╯",
     )
 
     await asyncio.sleep(1)
