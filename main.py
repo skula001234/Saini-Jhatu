@@ -1147,20 +1147,20 @@ async def txt_handler(bot: Client, m: Message):
                         t_name = "Untitled"
                         v_name = re.sub(r":.*", "", raw_title).strip()
                     
-                    cc = f'🏷️ Fɪʟᴇ ID :  {str(count).zfill(3)}\n**🎞️ Tɪᴛʟᴇ :** `{v_name} [{res}p] .mkv`\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : **{CR}\n'
-                    cc1 = f'🏷️ Fɪʟᴇ ID :  {str(count).zfill(3)}\n**📑 Tɪᴛʟᴇ :** `{v_name} .pdf`\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : **{CR}\n'
-                    cczip = f'🏷️ Fɪʟᴇ ID :  {str(count).zfill(3)} ᴢɪᴘ\n**🎚️ Tɪᴛʟᴇ : : ** `{v_name} .zip`\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : **{CR}\n'
-                    ccimg = f'🏷️ Fɪʟᴇ ID :  {str(count).zfill(3)}\n**🖼️ Tɪᴛʟᴇ :** `{v_name} .jpg`\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : **{CR}\n'
-                    cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{v_name} .html`\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : **{CR}\n'
-                    ccyt = f'🏷️ Fɪʟᴇ ID :  {str(count).zfill(3)}\n**🎞️ Tɪᴛʟᴇ :** `{v_name} .mp4`\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : **{CR}\n'
-                    ccm = f'[🎵]Mp3 Id : {str(count).zfill(3)}\n**🎵 Tɪᴛʟᴇ :** `{v_name} .mp3`\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : **{CR}\n'
+                    cc = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)}\n**🎞️ Tɪᴛʟᴇ :** `{v_name} [{res}p] .mkv`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
+                    cc1 = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)}\n**📑 Tɪᴛʟᴇ :** `{v_name} .pdf`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
+                    cczip = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)} ᴢɪᴘ\n**🎚️ Tɪᴛʟᴇ : : ** `{v_name} .zip`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
+                    ccimg = f'🏷️ Fɪʟᴇ ID :  {str(count).zfill(3)}\n**🖼️ Tɪᴛʟᴇ :** `{v_name} .jpg`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
+                    cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{v_name} .html`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
+                    ccyt = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)}\n**🎞️ Tɪᴛʟᴇ :** `{v_name} .mp4`\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
+                    ccm = f'[🎵]Mp3 Id : {str(count).zfill(3)}\n**🎵 Tɪᴛʟᴇ :** `{v_name} .mp3`\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
                 else:
-                    cc = f'🏷️ Fɪʟᴇ ID :  {str(count).zfill(3)}\n**🎞️ Tɪᴛʟᴇ :** `{name1} [{res}p] .mkv`\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : **{CR}\n'
-                    cc1 = f'🏷️ Fɪʟᴇ ID :  {str(count).zfill(3)}\n**📑 Tɪᴛʟᴇ :** `{name1} .pdf`\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : **{CR}\n'
-                    cczip = f'🏷️ Fɪʟᴇ ID :  {str(count).zfill(3)} ᴢɪᴘ\n**🎚️ Tɪᴛʟᴇ :** `{name1} .zip`\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : **{CR}\n' 
-                    ccimg = f'🏷️ Fɪʟᴇ ID :  {str(count).zfill(3)}\n**🖼️ Tɪᴛʟᴇ : :** `{name1} .jpg`\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : **{CR}\n'
-                    ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\n**Audio Title :** `{name1} .mp3`\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : **{CR}\n'
-                    cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{name1} .html`\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :/b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : **{CR}\n'
+                    cc = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)}\n\n**🎞️ Tɪᴛʟᴇ :** `{name1} [{res}p] .mkv`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
+                    cc1 = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)}\n\n**📑 Tɪᴛʟᴇ :** `{name1} .pdf`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
+                    cczip = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)} ᴢɪᴘ\n\n**🎚️ Tɪᴛʟᴇ :** `{name1} .zip`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n****🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n' 
+                    ccimg = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)}\n\n**🖼️ Tɪᴛʟᴇ : :** `{name1} .jpg`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
+                    ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\n\n**Audio Title :** `{name1} .mp3`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
+                    cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n\n**Html Title :** `{name1} .html`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :/b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
                     
                 if "drive" in url:
                     try:
