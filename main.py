@@ -486,16 +486,16 @@ async def start(bot, m: Message):
     user = await bot.get_me()
 
     mention = user.mention
-    caption = f"🌟 Welcome {m.from_user.mention} ! 🌟"
+    caption = f"╭──────────────╮\n│ □ □ □ □ □ │\n╰──────────────╯"
     start_message = await bot.send_photo(
         chat_id=m.chat.id,
-        photo="https://tinypic.host/images/2025/07/14/IMG_20250714_161041_194.jpg",
+        photo="https://files.catbox.moe/oti8ry.jpg",
         caption=caption
     )
 
     await asyncio.sleep(1)
     await start_message.edit_text(
-        "╭──────────────╮\n│ ⬢ □ □ □ □ │\n╰──────────────╯",
+        "╭──────────────╮\n│ ⬢ □ □ □ │\n╰──────────────╯",
     )
 
     await asyncio.sleep(1)
@@ -505,7 +505,7 @@ async def start(bot, m: Message):
     
     await asyncio.sleep(1)
     await start_message.edit_text(
-        "╭──────────────╮\n│ ⬢ ⬢ □ □ □ │\n╰──────────────╯",
+        "╭──────────────╮\n│ ⬢ ⬢ ⬢ □ □ │\n╰──────────────╯",
     )
 
     await asyncio.sleep(1)
