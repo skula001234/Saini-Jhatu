@@ -63,10 +63,10 @@ photozip = 'https://envs.sh/cD_.jpg'
 
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/saini_contact_bot")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/DevThanosPmbot")]])
 keyboard = InlineKeyboardMarkup(
     [
-        [InlineKeyboardButton(text="🛠️ Help", url="https://t.me/+3k-1zcJxINYwNGZl"), InlineKeyboardButton(text="🛠️ Repo", url="https://github.com/nikhilsainiop/saini-txt-direct")],
+        [InlineKeyboardButton(text="🛠️ Help", url="https://t.me"), InlineKeyboardButton(text="🛠️ Repo", url="https://t.me/mrfrontman001")],
     ]
 )
 
@@ -521,7 +521,7 @@ async def start(bot, m: Message):
         ])
         
         await start_message.edit_text(
-            f"Mʏ Nᴀᴍᴇ [DRM Wɪᴢᴀʀᴅ 🦋](https://t.me/DRM_Wizardbot)\n\nYᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ\nCᴏɴᴛᴀᴄᴛ [⌯ FʀᴏɴᴛMᴀɴ | ×͜× |](https://t.me/Mrfrontman001) ғᴏʀ ᴀᴄᴄᴇꜱꜱ**", disable_web_page_preview=True, reply_markup=keyboard
+            f"**Mʏ Nᴀᴍᴇ [DRM Lɪᴢᴀʀᴅ 🦋](https://t.me/LizardDRMbot)\n\nYᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ\nCᴏɴᴛᴀᴄᴛ [⌯ FʀᴏɴᴛMᴀɴ | ×͜× |](https://t.me/Mrfrontman001) ғᴏʀ ᴀᴄᴄᴇꜱꜱ**", disable_web_page_preview=True, reply_markup=keyboard
         )
     else:
         await asyncio.sleep(2)
@@ -530,7 +530,7 @@ async def start(bot, m: Message):
             [InlineKeyboardButton("🪔 ғᴇᴀᴛᴜʀᴇꜱ", callback_data="help"), InlineKeyboardButton("ᴅᴇᴛᴀɪʟꜱ 🐺", url="https://t.me/MrFrontMan001")],
         ])
         await start_message.edit_text(
-           f"Mʏ Nᴀᴍᴇ [DRM Wɪᴢᴀʀᴅ 🦋](https://t.me/DRM_Wizardbot)\n\nYᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ\nCᴏɴᴛᴀᴄᴛ [⌯ FʀᴏɴᴛMᴀɴ | ×͜× |](https://t.me/Mrfrontman001) ғᴏʀ ᴀᴄᴄᴇꜱꜱ**", disable_web_page_preview=True, reply_markup=keyboard
+           f"**Mʏ Nᴀᴍᴇ [DRM Wɪᴢᴀʀᴅ 🦋](https://t.me/LizardDRMbot)\n\nYᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ\nCᴏɴᴛᴀᴄᴛ [⌯ FʀᴏɴᴛMᴀɴ | ×͜× |](https://t.me/Mrfrontman001) ғᴏʀ ᴀᴄᴄᴇꜱꜱ**", disable_web_page_preview=True, reply_markup=keyboard
     )
 
 @bot.on_callback_query(filters.regex("back_to_main_menu"))
