@@ -493,24 +493,29 @@ async def start(bot, m: Message):
         caption=caption
     )
 
-    await asyncio.sleep(1)
+    await asyncio.sleep(0.2)
     await start_message.edit_text(
         "╭──────────────╮\n│ ⬢ □ □ □ □ │\n╰──────────────╯",
     )
 
-    await asyncio.sleep(1)
+    await asyncio.sleep(0.2)
     await start_message.edit_text(
         "╭──────────────╮\n│ ⬢ ⬢ □ □ □ │\n╰──────────────╯",
     )
     
-    await asyncio.sleep(1)
+    await asyncio.sleep(0.2)
     await start_message.edit_text(
         "╭──────────────╮\n│ ⬢ ⬢ ⬢ □ □ │\n╰──────────────╯",
     )
 
-    await asyncio.sleep(1)
+    await asyncio.sleep(0.2)
     await start_message.edit_text(
         "╭──────────────╮\n│ ⬢ ⬢ ⬢ ⬢ □ │\n╰──────────────╯",
+    )
+
+    await asyncio.sleep(0.2)
+    await start_message.edit_text(
+        "╭──────────────╮\n│ ⬢ ⬢ ⬢ ⬢ ⬢ │\n╰──────────────╯",
     )
 
     await asyncio.sleep(1)
@@ -528,7 +533,7 @@ async def start(bot, m: Message):
  ➜ 🚀 • ᴜʟᴛʀᴀ-ꜰᴀꜱᴛ ꜱᴘᴇᴇᴅ  💰**", disable_web_page_preview=True, reply_markup=keyboard
         )
     else:
-        await asyncio.sleep(2)
+        await asyncio.sleep(1)
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("⌯ FʀᴏɴᴛMᴀɴ | ×͜× |", url="https://t.me/MrFrontMan001")],
             [InlineKeyboardButton("🪔 ғᴇᴀᴛᴜʀᴇꜱ", callback_data="help"), InlineKeyboardButton("ᴅᴇᴛᴀɪʟꜱ 🐺", url="https://t.me/MrFrontMan001")],
