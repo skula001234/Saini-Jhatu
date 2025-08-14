@@ -521,7 +521,11 @@ async def start(bot, m: Message):
         ])
         
         await start_message.edit_text(
-            f"**Mʏ Nᴀᴍᴇ [DRM Lɪᴢᴀʀᴅ 🦋](https://t.me/LizardDRMbot)\n\nYᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ\nCᴏɴᴛᴀᴄᴛ [⌯ FʀᴏɴᴛMᴀɴ | ×͜× |](https://t.me/Mrfrontman001) ғᴏʀ ᴀᴄᴄᴇꜱꜱ**", disable_web_page_preview=True, reply_markup=keyboard
+            f"**Mʏ Nᴀᴍᴇ [DRM Lɪᴢᴀʀᴅ 🦋](https://t.me/LizardDRMbot)\n\n 
+ ➜ 🔓 • ᴀᴜᴛᴏ ᴅʀᴍ ᴅᴇᴄʀʏᴘᴛɪᴏɴ
+ ➜ ⚡ • ᴘʀᴇᴍɪᴜᴍ Qᴜᴀʟɪᴛʏ
+ ➜ 📚 • ʙᴀᴛᴄʜ ꜱᴜᴘᴘᴏʀᴛ
+ ➜ 🚀 • ᴜʟᴛʀᴀ-ꜰᴀꜱᴛ ꜱᴘᴇᴇᴅ  💰**", disable_web_page_preview=True, reply_markup=keyboard
         )
     else:
         await asyncio.sleep(2)
